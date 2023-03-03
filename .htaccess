@@ -1,0 +1,7 @@
+#toto je koment
+#toto prelozi stroji hezkou urla na ?id=galerie
+#http://localhost/tony/2023-02-07/primapenzion/kontakt
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.+) index.php?id=$1 [L,QSA]

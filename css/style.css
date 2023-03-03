@@ -1,0 +1,255 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* h1, h2,h3, p, ul, li */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a,
+.socIkony i,
+input {
+    transition: 0.3s ease-in-out all;
+}
+
+img,
+iframe {
+    vertical-align: top;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+header .container {
+    width: 85%;
+}
+
+header {
+    text-align: center;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.tel:hover,
+.logo:hover {
+    color: #b30000;
+    text-decoration: underline;
+}
+
+.socIkony {
+    font-size: 22px;
+}
+
+.fa-facebook-f:hover {
+    color: #1877F2;
+}
+
+.fa-instagram:hover {
+    color: #E4405F;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+.menu {
+    padding: 40px 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a {
+    padding-bottom: 10px;
+}
+
+.menu ul li a:hover {
+    border-bottom: 3px solid #b30000;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+/*Break point Mobil3*/
+
+@media screen and (max-width: 700px) {
+    .menu ul {
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .menu ul {
+        flex-direction: column;
+    }
+}
+
+/*Section*/
+.obsah {
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+
+
+h1 {
+    font-size: 50px;
+    padding: 40px 0 80px;
+}
+
+.obsah h2 {
+    color: #a57a5b;
+    padding-bottom: 30px;
+}
+
+/*Footer*/
+.pata {
+    background: #eaeaea;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.pata .logo {
+    font-size: 25px;
+}
+
+.pataInfo {
+    padding: 40px 0;
+}
+
+.pataInfo p i,
+.kontaktFlex p i {
+    /* margin-right: 15px; */
+    width: 40px;
+}
+
+.pataInfo p strong,
+.kontaktFlex p strong {
+    color: #b30000;
+}
+
+.pata .socIkony {
+    font-size: 40px;
+}
+
+.copy {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/*Kontakt*/
+.kontakt {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.grey {
+    background: #eaeaea;
+    padding: 0 40px 40px;
+}
+
+.kontaktFlex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.karty p i {
+    font-size: 50px;
+}
+
+.kontakt iframe {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.grey h2 {
+    padding: 40px 0;
+    letter-spacing: 10px;
+}
+
+.kontakt input[type="text"],
+.kontakt input[type="email"],
+.kontakt input[type="date"],
+.kontakt textarea,
+.kontakt select {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.kontakt textarea {
+    height: 120px;
+}
+
+.kontakt input[type="submit"] {
+    padding: 10px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #b30000;
+    border: 2px solid #b30000;
+    border-radius: 10px;
+    background: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.kontakt input[type="submit"]:hover {
+    color: #fff;
+    background: #b30000;
+    cursor: pointer;
+}
+
+/*Galerie*/
+
+.obsah img {
+    width: 24%;
+}
+
+.foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+}
